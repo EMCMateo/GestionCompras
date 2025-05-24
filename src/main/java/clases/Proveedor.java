@@ -1,4 +1,4 @@
-package ec.edu.ups.interfaz.clases;
+package clases;
 public class Proveedor extends Persona{
     private String empresa;
 

@@ -1,4 +1,4 @@
-package ec.edu.ups.interfaz.clases;
+package clases;
 public class DetalleCompra implements Calculable {
     private int cantidad;
     private Producto producto;
@@ -42,11 +42,10 @@ public class DetalleCompra implements Calculable {
 
     @Override
     public String toString() {
-        return "| Producto: " + producto.getNombre() +
-                " | Cantidad: " + cantidad +
-                " | Descripción: " + descripcion +
-                " | Precio Unitario: $" + String.format("%.2f", producto.calcularCosto()) +
-                " | Precio Total: $" + String.format("%.2f", calcularCostoTotal()) +
-                " |\n";
+        return "| " + producto.getNombre() + " | Cant: "
+                +  cantidad + " | "
+                + descripcion + " | PrecioU: "
+                + producto.calcularCosto() + " | PrecioT: "
+                + calcularCostoTotal() + " | \n";
     }
-    }
+}

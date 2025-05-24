@@ -1,10 +1,10 @@
-package ec.edu.ups.interfaz.clases;
+package clases;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
-
-import ec.edu.ups.interfaz.enums.TipoProducto;
-import ec.edu.ups.interfaz.enums.TipoDepartamento;
+import enums.TipoProducto;
+import enums.TipoDepartamento;
 
 public class ViewConsole {
     private Scanner leer;
@@ -19,18 +19,18 @@ public class ViewConsole {
 
     public void mostrarMenu() {
         mostrarMensaje("\n" +
-                //"1. Registrar proveedor\n" +
-                //"2. Registrar producto\n" +
+                "1. Registrar proveedor\n" +
+                "2. Registrar producto\n" +
                 "3. Registrar solicitud de compra\n" +
-                //"4. Listar proveedores\n" +
-                //"5. Listar productos\n" +
+                "4. Listar proveedores\n" +
+                "5. Listar productos\n" +
                 "6. Listar solicitudes de compra\n" +
-                //"7. Buscar proveedor por ID\n" +
-                //"8. Buscar producto por nombre\n" +
+                "7. Buscar proveedor por ID\n" +
+                "8. Buscar producto por nombre\n" +
                 "9. Buscar solicitud por número\n" +
                 "10. Aprobar / Rechazar solicitud de compra\n" +
                 "11. Calcular total de una solicitud\n" +
-                //"12. Ingresar un empleado\n" +
+                "12. Ingresar un empleado\n" +
                 "13. Salir\n" +
                 "Seleccione una opción: ");
     }

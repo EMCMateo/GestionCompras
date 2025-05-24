@@ -1,4 +1,4 @@
-package ec.edu.ups.interfaz.clases;
+package clases;
 
 public class Empleado extends Persona {
     private Departamento departamento;
