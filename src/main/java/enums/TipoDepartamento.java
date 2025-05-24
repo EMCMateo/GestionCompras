@@ -1,4 +1,4 @@
-package ec.edu.ups.interfaz.enums;
+package enums;
 
 public enum TipoDepartamento {
 

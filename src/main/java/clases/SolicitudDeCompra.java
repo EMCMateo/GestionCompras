@@ -1,6 +1,6 @@
-package ec.edu.ups.interfaz.clases;
+package clases;
 import java.text.SimpleDateFormat;
-import ec.edu.ups.interfaz.enums.EstadoSolicitud;
+import enums.EstadoSolicitud;
 
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
@@ -72,19 +72,15 @@ public class SolicitudDeCompra {
         }
         return total;
     }
+
     @Override
-    public String toString() {
+    public String toString(){
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-        String salida = "Código: " + id +
-                " | Fecha: " + formato.format(fechaSolicitud.getTime()) +
-                " | Solicitante: " + solicitante +
-                " | Estado: " + estadoSolicitud +
-                "\nDetalles:\n";
 
-        for (DetalleCompra detalle : detalleCompras) {
-            salida += "  - " + detalle.toString();
-        }
-
-        return salida;
+        return "Codigo:" + id +
+                "\nFecha: " + formato.format(fechaSolicitud.getTime()) +
+                "\n Solicitante:" + solicitante +
+                "\n" + detalleCompras +
+                "\n Estado: " +estadoSolicitud;
     }
-    }
+}

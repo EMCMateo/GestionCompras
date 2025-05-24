@@ -1,7 +1,5 @@
-package ec.edu.ups.interfaz;
-
-import ec.edu.ups.interfaz.clases.*;
-import ec.edu.ups.interfaz.enums.EstadoSolicitud;
+import clases.*;
+import enums.EstadoSolicitud;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.GregorianCalendar;
